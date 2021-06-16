@@ -59,7 +59,7 @@ a:hover {
     transition: all .5s ease;
 }
 .welcome-block {
-    min-height: 100vh;
+    height: 100vh;
     padding: 24px;
     position: relative;
 }
@@ -514,13 +514,13 @@ header {
     background-size: cover;
 }
 
-@media screen and (max-width: 1280px){
+@media (max-width: 1280px) {
     .portfolio-title {
         display: none;
     }
 }
 
-@media screen and (max-width: 960px){
+@media (max-width: 960px) {
     .first-project-header {
         font-size: 50px;
     }
@@ -530,7 +530,7 @@ header {
     }
 }
 
-@media screen and (max-width: 755px){
+@media (max-width: 755px) {
     .about {
         margin: 50px auto;
     }
@@ -549,13 +549,17 @@ header {
     }
 }
 
-@media screen and (max-width: 680px) {
+@media (max-width: 680px) {
     .first-project__images-block__middle-image {
         grid-row: 1/6;
     }
 
     .first-project-header {
         margin: 0 10px 10px;
+    }
+
+    .nav-list {
+        width: 100%;
     }
 
     .project-name {
@@ -567,7 +571,7 @@ header {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .home-btn__link {
         font-size: 30px;
     }
@@ -645,7 +649,7 @@ header {
     }
 }
 
-@media screen and (max-width: 530px) {
+@media (max-width: 530px) {
     .about {
         flex-wrap: wrap;
         justify-content: center;
@@ -656,7 +660,7 @@ header {
     }
 }
 
-@media screen and (max-width: 435px) {
+@media (max-width: 435px) {
     .first-project-header-container {
         grid-row: 4/6;
     }
