@@ -568,6 +568,26 @@ header {
 }
 
 @media screen and (max-width: 600px) {
+    .home-btn__link {
+        font-size: 30px;
+    }
+
+    .theme-toggle-and-nav {
+        min-width: 200px;
+    }
+
+    .theme-toggle-and-nav__nav {
+        width: 100%;
+    }
+
+    .theme-toggle-and-nav__nav::before {
+        width: 100%;
+    }
+
+    .theme-toggle-and-nav__nav::after {
+        width: 100%;
+    }
+
     .welcome-block__text {
         font-size: 50px;
     }
