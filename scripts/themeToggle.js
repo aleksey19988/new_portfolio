@@ -12,7 +12,6 @@ themeToggleBtn.addEventListener('click', () => {
         for (link of links) {
             link.style.color = '#000';
         }
-        themeToggleBtn.style.filter = 'invert(100%)';
         navList.style.backgroundColor = '#fff';
         navLinks.style.color = '#000';
     } else {
@@ -21,7 +20,6 @@ themeToggleBtn.addEventListener('click', () => {
         for (link of links) {
             link.style.color = '#fff';
         }
-        themeToggleBtn.style.filter = 'invert(0)';
         navList.style.backgroundColor = '#000';
         navLinks.style.color = '#fff';
     }

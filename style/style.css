@@ -54,9 +54,10 @@ a:hover {
     right: 0;
     width: 50vw;
     height: 100vh;
-    background: no-repeat url("../images/Hero_image.webp") top right;
+    background: no-repeat url("../images/IMG_20210605_235207.jpg") top right;
     background-size: cover;
     transition: all .5s ease;
+    z-index: -1;
 }
 .welcome-block {
     height: 100vh;
@@ -72,10 +73,6 @@ a:hover {
     z-index: 1;
 }
 
-header {
-    height: 32px;
-}
-
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -86,6 +83,9 @@ header {
     justify-content: space-between;
     align-items: center;
     min-width: 80px;
+    background-color: #424242;
+    padding: 0 10px;
+    border-radius: 25px;
 }
 
 .theme-toggle-and-nav * {
@@ -147,6 +147,7 @@ header {
     padding: 0;
     margin: 0;
     transition: all .8s ease;
+    z-index: 2;
 }
 
 .nav-list:hover {
@@ -155,7 +156,6 @@ header {
 
 .nav-list * {
     width: 100%;
-    padding: 60px 0;
     font-size: 35px;
     text-align: center;
 }
@@ -577,7 +577,7 @@ header {
     }
 
     .theme-toggle-and-nav {
-        min-width: 200px;
+        min-width: 100px;
     }
 
     .theme-toggle-and-nav__nav {
