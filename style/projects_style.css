@@ -133,6 +133,7 @@ a:hover {
     padding: 0;
     margin: 0;
     transition: all .8s ease;
+    z-index: 1;
 }
 
 .nav-list:hover {
@@ -155,21 +156,21 @@ a:hover {
     transition: all .5s ease;
 }
 
-.close-nav-list-btn::before {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    transform: rotate(45deg);
-    position: absolute;
+.close-nav-list-btn {
+    width: 50px;
+    height: 50px;
 }
 
-.close-nav-list-btn::after {
-    content: '';
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
+.left-border-close-btn {
+    transform: rotate(45deg);
+    font-size: 50px;
+    transform-origin: 100% 100% 0;
+}
+
+.right-border-close-btn {
     transform: rotate(-45deg);
+    font-size: 50px;
+    transform-origin: 0% 100% 0;
 }
 
 .close-nav-list-btn:hover {
@@ -187,4 +188,39 @@ a:hover {
 
 .theme-toggle-and-nav__nav__container:hover .theme-toggle-and-nav__nav::after {
     left: -7px;
+}
+
+.project-list {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+    list-style: none;
+}
+
+.project-list__item {
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.project-list__item::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 22px;
+    left: -10px;
+}
+
+@media (max-width: 680px) {
+    .nav-list * {
+        padding: 0;
+    }
+    .nav-list {
+        width: 100%;
+    }
 }
