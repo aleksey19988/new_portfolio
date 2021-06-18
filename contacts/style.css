@@ -189,32 +189,6 @@ a:hover {
     left: -7px;
 }
 
-.project-list {
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 30px;
-    list-style: none;
-}
-
-.project-list__item {
-    padding: 10px 20px;
-    font-size: 20px;
-    position: relative;
-    margin: 10px 0;
-}
-
-.project-list__item::before {
-    content: '';
-    width: 20px;
-    height: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 22px;
-    left: -10px;
-}
-
 @media (max-width: 680px) {
     .nav-list * {
         padding: 0;
