@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-weight: lighter;
@@ -189,11 +189,167 @@ a:hover {
     left: -7px;
 }
 
+.decor-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decor-img {
+    width: 60vw;
+    height: 25vh;
+    background: linear-gradient(130deg, #fd00ff, #e85b5b, #383131);
+    background-size: 600% 600%;
+
+    -webkit-animation: backgroundAnimation 21s ease infinite;
+    -moz-animation: backgroundAnimation 21s ease infinite;
+    animation: backgroundAnimation 21s ease infinite;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-head {
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.question-container {
+    width: 60vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-weight: bold;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1px;
+}
+
+.open-form-btn {
+    margin: 50px 0;
+    border: 1px solid rgb(141, 141, 141);
+    padding: 20px;
+    border-radius: 35px;
+    transition: all .5s ease;
+    font-weight: normal;
+}
+
+.open-form-btn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.social-container {
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-list__item {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.social-list__item__link {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: block;
+}
+
+.github-link {
+    background-image: url(../icons/social-icons/github.png);
+}
+
+.vk-link {
+    background-image: url(../icons/social-icons/vk.png);
+}
+
+.whatsapp-link {
+    background-image: url(../icons/social-icons/whatsapp.png);
+}
+
+.instagram-link {
+    background-image: url(../icons/social-icons/instagram.png);
+}
+
+.skype-link {
+    background-image: url(../icons/social-icons/skype.png);
+}
+
+.telegram-link {
+    background-image: url(../icons/social-icons/telegram.png);
+}
+
+
+@-webkit-keyframes backgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes backgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes backgroundAnimation {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+
 @media (max-width: 680px) {
     .nav-list * {
         padding: 0;
     }
     .nav-list {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .home-btn__link {
+        font-size: 30px;
+    }
+
+    .theme-toggle-and-nav {
+        min-width: 100px;
+    }
+
+    .theme-toggle-and-nav__nav {
+        width: 100%;
+    }
+
+    .theme-toggle-and-nav__nav::before {
+        width: 100%;
+    }
+
+    .theme-toggle-and-nav__nav::after {
+        width: 100%;
+    }
+
+    .contacts-head {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .contacts-head {
+        font-size: 40px;
     }
 }
