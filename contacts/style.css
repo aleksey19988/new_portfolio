@@ -224,6 +224,99 @@ a:hover {
     align-items: center;
 }
 
+.container-form {
+    background-image: url(../images/Hero_image.webp);
+    background-size: cover;
+    min-height: 500px;
+    width: 70vw;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -2000px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    font-weight: 700;
+    position: absolute;
+    transition: all .9s ease;
+    z-index: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+label {
+    text-align: center;
+}
+
+.input-container input {
+    font-size: 20px;
+    margin: 10px auto;
+    border: none;
+    padding: 0 5px;
+    border-radius: 5px;
+    width: 50%;
+    min-height: 40px;
+}
+
+.text-message {
+    width: 50%;
+    min-height: 200px;
+    resize: none;
+    margin: 10px auto;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.send-button {
+    border-radius: 35px;
+    background-color: #fff;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    font-size: 20px;
+}
+
+.send-button:hover {
+    cursor: pointer;
+}
+
+.close-form-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.close-form-btn:hover {
+    cursor: pointer;
+}
+
+.close-form-btn::before {
+    content: '';
+    display: block;
+    transform: rotate(45deg) translate(17px, -18px);
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+
+.close-form-btn::after {
+    content: '';
+    display: block;
+    transform: rotate(-45deg) translate(53px, -18px);
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+
 p {
     font-weight: bold;
     font-family: 'Comfortaa', cursive;
@@ -319,6 +412,29 @@ p {
     }
     .nav-list {
         width: 100%;
+    }
+    .input-container {
+        font-size: 15px;
+    }
+    .input-container input {
+        font-size: 15px;
+        margin: 10px auto;
+        width: 70%;
+        min-height: 40px;
+    }
+    .text-message {
+        width: 70%;
+        min-height: 200px;
+        resize: none;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+    .send-button {
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        font-size: 15px;
     }
 }
 

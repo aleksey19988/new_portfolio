@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="style.css">
     <title>Контакты</title>
 </head>
@@ -45,6 +45,28 @@
         <h1 class="contacts-head">Контакты</h1>
         </div>
     </div>
+    <div class="container container-form">
+        <form action="send.php" method="POST" class="form-data">
+            <div class="input-container name-input-container">
+                <label for="name">Ваше имя*</label>
+                <input type="text" class="name" name="name" placeholder="Имя" id="name" required>
+            </div>
+            <div class="input-container phone-input-container">
+                <label for="phone">Номер телефона*</label>
+                <input type="phone" class="phone" name="phone" placeholder="7-ХХХ-ХХХ-ХХХХ" pattern="[0-9]+" id="phone" required >
+            </div>
+            <div class="input-container email-input-container">
+                <label for="email">Email*</label>
+                <input type="email" class="email" id="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="input-container text-input-container">
+                <label for="text-message">Ваше сообщение*</label>
+                    <textarea type="text" class="text-message" name="text-message" placeholder="Ваше сообщение" id="text-message" required></textarea>
+            </div>
+            <input type="submit" class="send-button" value="Отправить">
+        </form>
+        <div class="close-form-btn"></div>
+    </div>
     <div class="container question-container">
         <p class="question">Хотите узнать больше или пообщаться?</p>
         <p class="welcome">Я буду рад!</p>
@@ -63,4 +85,5 @@
 </body>
 <script src="../scripts/navMenu.js"></script>
 <script src="../scripts/themeToggle.js"></script>
+<script src="app.js"></script>
 </html>
