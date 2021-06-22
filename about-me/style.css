@@ -188,8 +188,36 @@ a:hover {
 .theme-toggle-and-nav__nav__container:hover .theme-toggle-and-nav__nav::after {
     left: -7px;
 }
+h2 {
+    font-size: 45px;
+}
+
+.about-me-table th {
+    text-align: left;
+}
+
+.hard-skills-list li {
+    margin: 10px 0;
+}
+
+.about-first-project-table tr:nth-child(2n+1) {
+    background: #86868680;
+}
+
+@media (max-width: 680px) {
+    .nav-list * {
+        padding: 0;
+    }
+    .nav-list {
+        width: 100%;
+    }
+}
 
 @media (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+    
     .home-btn__link {
         font-size: 30px;
     }
@@ -210,8 +238,8 @@ a:hover {
         width: 100%;
     }
 
-    .contacts-head {
-        font-size: 50px;
+    h2 {
+        font-size: 30px;
     }
 }
 
