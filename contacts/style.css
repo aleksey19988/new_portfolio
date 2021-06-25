@@ -443,6 +443,9 @@ p {
         width: 130px;
         font-size: 15px;
     }
+    .warning-message {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px) {
